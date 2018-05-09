@@ -11,6 +11,18 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/verify/{token}', ['uses' => 'VerifyController@verify'])->name('verify');
+
+
+Route::get('/profile', ['uses' => 'HomeController@profile'])->name('profile');
