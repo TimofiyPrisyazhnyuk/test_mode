@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+
 <h1>Hi!</h1>
 <img src="{{ url('/uploads/' . $user->avatar) }}" alt="lalal">
 </body>

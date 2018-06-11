@@ -13,8 +13,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'name' => str_random(10),
-            'email' =>'timofiyprisyazhnyuk@gmail.com',
+            'name' => 'Timofiy',
+            'email' =>'tima@gmail.com',
             'password' => bcrypt('123456'),
         ]);
     }

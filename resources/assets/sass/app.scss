@@ -1,9 +1,13 @@
-
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
 // Variables
 @import "variables";
-
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+.app-container b {
+  color: #3d3d3d;
+  font-size: 30px;
+}
+
+
